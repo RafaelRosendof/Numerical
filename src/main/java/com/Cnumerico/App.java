@@ -1,20 +1,35 @@
 package com.Cnumerico;
 
+import com.Cnumerico.calculus.IntegrationView;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
-
 /**
  * Hello world!
  *
  */
 
-public class App extends Application 
+public class App
 {
+    public static void main(String[] args){
+        Application.launch(IntegrationView.class, args);
+    }
+
+}
+
+/*
+ *Para compilar basta digitar no terminal:
+ mvn exec:java -Dexec.mainClass="com.Cnumerico.App"
+
+
+ ou para compilar 
+ mvn compile 
+ e para executar
+ mvn package gera o jar
+java -jar target/Numerical-1.0-SNAPSHOT.jar para executar o .jar
+
+
+
+
+hello world em JAVAFx
     public static void main( String[] args )
     {
         launch(args);
@@ -39,16 +54,4 @@ public class App extends Application
         primaryStage.setScene(new Scene(root , 400 , 500));
         primaryStage.show();
     }
-}
-
-/*
- *Para compilar basta digitar no terminal:
- mvn exec:java -Dexec.mainClass="com.Cnumerico.App"
-
-
- ou para compilar 
- mvn compile 
- e para executar
- mvn package gera o jar
-java -jar target/Numerical-1.0-SNAPSHOT.jar para executar o .jar
  */
