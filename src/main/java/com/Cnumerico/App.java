@@ -1,6 +1,6 @@
 package com.Cnumerico;
 
-import com.Cnumerico.calculus.IntegrationView;
+import com.Cnumerico.calculus.integrationMenu;
 import javafx.application.Application;
 /**
  * Hello world!
@@ -10,7 +10,8 @@ import javafx.application.Application;
 public class App
 {
     public static void main(String[] args){
-        Application.launch(IntegrationView.class, args);
+        Application.launch(integrationMenu.class, args);
+
     }
 
 }

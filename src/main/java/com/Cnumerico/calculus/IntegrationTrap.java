@@ -18,7 +18,7 @@ import java.util.function.Function;
 
 
 
-public class IntegrationView extends Application {
+public class IntegrationTrap extends Application {
    public static void main(String[] args) {
        launch(args);
 
